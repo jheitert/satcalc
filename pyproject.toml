@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "satcalc"
+version = "0.1.0"
+description = "Fetch Sentinel-1 TLEs and propagate them with SGP4"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "sgp4>=2.0",
+    "requests",
+]
+
+[project.scripts]
+satcalc = "satcalc:main"
+
+[tool.setuptools]
+py-modules = ["satcalc"]
