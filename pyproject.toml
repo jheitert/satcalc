@@ -15,6 +15,7 @@ dependencies = [
 
 [project.scripts]
 satcalc = "satcalc:main"
+nextscan = "nextscan:main"
 
 [tool.setuptools]
-py-modules = ["satcalc"]
+py-modules = ["satcalc", "nextscan", "acqplan"]
